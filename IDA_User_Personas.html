@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User personas · IDA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="notion.css">
+</head>
+<body>
+<div class="page">
+  <div class="topbar">
+    <div class="crumbs">
+      <a href="IDA_Customer_Portrait_Infographic.html">Customer portrait</a>
+      <span class="sep">/</span>
+      <span class="current">User personas</span>
+    </div>
+    <div class="toplinks">
+      <a href="IDA_Customer_Portrait_Infographic.html">Portrait</a>
+      <a class="active" href="IDA_User_Personas.html">Personas</a>
+    </div>
+  </div>
+
+  <div class="page-icon" aria-hidden="true">🗂️</div>
+  <h1>User personas</h1>
+  <p class="page-desc">Composite averages from completed orders. Three use-case archetypes, then five country portraits. Licence-origin cuts are Jan–Jul 2026 only.</p>
+
+  <div class="props">
+    <div class="prop"><div class="k"><span class="dot">📅</span>Period</div><div class="v">Aug 1, 2025 – Jul 29, 2026</div></div>
+    <div class="prop"><div class="k"><span class="dot">#</span>Base</div><div class="v">41,063 completed orders</div></div>
+    <div class="prop"><div class="k"><span class="dot">⚠</span>Caveat</div><div class="v muted">Age / gender / device are global. Licence vs billing from Jan 2026.</div></div>
+    <div class="prop"><div class="k"><span class="dot">→</span>Related</div><div class="v"><a href="IDA_Customer_Portrait_Infographic.html" style="color:inherit;"><span class="tag blue">Customer portrait</span></a></div></div>
+  </div>
+
+  <section>
+    <h2>Three use cases</h2>
+    <p class="caption">Country still decides the job. Licence data splits “home use” into immigrants with foreign licences (CA/UK) vs rare true local-licence home buyers.</p>
+    <div class="persona-grid" style="grid-template-columns:1fr 1fr 1fr;">
+      <div class="persona">
+        <div style="margin-bottom:8px;"><span class="tag orange">Immigrant · home</span></div>
+        <h3>Foreign-licence local driver</h3>
+        <p>Lives in CA or UK, holds a licence issued elsewhere, needs an IDP to drive legally at home. Not a trip shopper.</p>
+        <div class="chips">
+          <span class="tag gray">CA 73.7% foreign</span>
+          <span class="tag gray">UK 70.4% foreign</span>
+          <span class="tag orange">Licence ≠ billing</span>
+          <span class="tag green">Destination ≈ billing</span>
+        </div>
+        <p class="why"><strong>Why it matters:</strong> landings like “Drive legally in Canada/UK with your foreign licence,” corridor-specific creative (GT/MX → CA, IN → UK).</p>
+      </div>
+      <div class="persona">
+        <div style="margin-bottom:8px;"><span class="tag blue">Outbound traveler</span></div>
+        <h3>The trip buyer</h3>
+        <p>Local licence, foreign destination. Dominant in India, USA, Australia (77–86% licence match).</p>
+        <div class="chips">
+          <span class="tag gray">IN / US / AU</span>
+          <span class="tag blue">Licence ≈ billing</span>
+          <span class="tag orange">Destination ≠ billing</span>
+        </div>
+        <p class="why"><strong>Why it matters:</strong> trip timing, destination corridors, classic travel IDP proof points.</p>
+      </div>
+      <div class="persona">
+        <div style="margin-bottom:8px;"><span class="tag gray">Local licence · home</span></div>
+        <h3>True domestic minority</h3>
+        <p>Billing country matches licence. Exists in every market, but is the minority story in CA/UK and not the growth narrative in IN/US/AU.</p>
+        <div class="chips">
+          <span class="tag gray">CA 26.3% match</span>
+          <span class="tag gray">UK 29.6% match</span>
+          <span class="tag green">Licence = billing</span>
+        </div>
+        <p class="why"><strong>Why it matters:</strong> don’t build CA/UK messaging around “locals getting an IDP for home use.”</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Five country portraits</h2>
+    <p class="caption">Home-use from destination data; foreign-licence % from billing vs <code>license_issued_country</code> (Jan–Jul 2026).</p>
+
+    <div class="db">
+      <table>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Persona</th>
+            <th>Home use</th>
+            <th>Foreign licence</th>
+            <th>Primary job</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="title">Canada</td>
+            <td>LatAm immigrant corridor</td>
+            <td class="num">81.1%</td>
+            <td class="num">73.7%</td>
+            <td><span class="tag orange">Immigrant · home</span></td>
+          </tr>
+          <tr>
+            <td class="title">UK</td>
+            <td>South Asian diaspora corridor</td>
+            <td class="num">54.1%</td>
+            <td class="num">70.4%</td>
+            <td><span class="tag orange">Immigrant · home</span></td>
+          </tr>
+          <tr>
+            <td class="title">USA</td>
+            <td>Europe-bound traveler</td>
+            <td class="num">13.3%</td>
+            <td class="num">16.7%</td>
+            <td><span class="tag blue">Travel</span></td>
+          </tr>
+          <tr>
+            <td class="title">India</td>
+            <td>Long-haul trip buyer</td>
+            <td class="num">6.5%</td>
+            <td class="num">14.0%</td>
+            <td><span class="tag blue">Travel</span></td>
+          </tr>
+          <tr>
+            <td class="title">Australia</td>
+            <td>Short-haul abroad</td>
+            <td class="num">24.9%</td>
+            <td class="num">23.0%</td>
+            <td><span class="tag blue">Travel</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="persona-grid" style="margin-top:16px;">
+      <div class="persona">
+        <div style="margin-bottom:8px;"><span class="tag gray">Canada</span></div>
+        <h3>LatAm immigrant corridor</h3>
+        <p class="meta-line">Home use <b>81.1%</b> · foreign licence <b>73.7%</b> · GT+MX ≈ <b>79%</b> of foreign</p>
+        <p>Not a domestic Canadian with a local licence. Mostly recent arrivals / workers from Guatemala and Mexico (Québec-heavy pattern), buying an IDP to drive on a foreign licence inside Canada.</p>
+        <div class="chips">
+          <span class="tag orange">Immigrant · home</span>
+          <span class="tag gray">Guatemala 58.7%</span>
+          <span class="tag gray">Mexico 20.2%</span>
+        </div>
+        <p class="why"><strong>Message:</strong> “Drive legally in Canada with your foreign licence.” Skip trip-planning creative.</p>
+      </div>
+
+      <div class="persona">
+        <div style="margin-bottom:8px;"><span class="tag gray">UK</span></div>
+        <h3>South Asian diaspora corridor</h3>
+        <p class="meta-line">Home use <b>54.1%</b> · foreign licence <b>70.4%</b> · India <b>54.7%</b> of foreign</p>
+        <p>Same immigrant-home mechanic as Canada, different origin. India dominates foreign licences; US / Brazil / Nigeria trail. Destination mix still looks “split,” but licence data says the core job is local driving on a foreign licence.</p>
+        <div class="chips">
+          <span class="tag orange">Immigrant · home</span>
+          <span class="tag gray">India 54.7%</span>
+          <span class="tag gray">USA 5.3%</span>
+        </div>
+        <p class="why"><strong>Message:</strong> “Drive legally in the UK with your foreign licence,” with India-first creative.</p>
+      </div>
+
+      <div class="persona">
+        <div style="margin-bottom:8px;"><span class="tag gray">USA</span></div>
+        <h3>Europe-bound traveler</h3>
+        <p class="meta-line">Home use <b>13.3%</b> · foreign licence only <b>16.7%</b> · <b>83.3%</b> licence match</p>
+        <p>Classic trip buyer with a US licence. Demand clusters on European driving destinations.</p>
+        <div class="chips">
+          <span class="tag blue">Outbound traveler</span>
+          <span class="tag gray">Europe focus</span>
+        </div>
+        <p class="why"><strong>Top destinations:</strong> Italy, Bulgaria, Spain, Poland, Greece</p>
+      </div>
+
+      <div class="persona">
+        <div style="margin-bottom:8px;"><span class="tag gray">India</span></div>
+        <h3>Long-haul trip buyer</h3>
+        <p class="meta-line">Home use <b>6.5%</b> · foreign licence only <b>14.0%</b> · <b>86.0%</b> licence match</p>
+        <p>Most outbound of the five. Local Indian licence, destinations abroad. Also the main licence-origin source into the UK immigrant segment.</p>
+        <div class="chips">
+          <span class="tag blue">Outbound traveler</span>
+          <span class="tag purple">Asia + West</span>
+        </div>
+        <p class="why"><strong>Top destinations:</strong> Thailand, Indonesia, USA, Italy, UK</p>
+      </div>
+
+      <div class="persona" style="grid-column:1 / -1;">
+        <div style="margin-bottom:8px;"><span class="tag gray">Australia</span></div>
+        <h3>Short-haul abroad</h3>
+        <p class="meta-line">Home use <b>24.9%</b> · foreign licence <b>23.0%</b> · <b>77.0%</b> licence match</p>
+        <p>Travel-first market with mostly local licences. Clearer destination clusters than CA/UK outbound scatter.</p>
+        <div class="chips">
+          <span class="tag blue">Outbound traveler</span>
+          <span class="tag gray">Indonesia / Italy</span>
+        </div>
+        <p class="why"><strong>Top destinations:</strong> Indonesia, Italy</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="callout" style="margin-top:8px;">
+    <div class="ico">💡</div>
+    <div class="body">
+      <strong>Product takeaway</strong>
+      <p>Canada and UK need a different funnel than US / India / Australia. Treat them as immigrant compliance, not outbound travel. Separate landings and creative by licence-origin corridor.</p>
+    </div>
+  </div>
+
+  <div class="sources">
+    <p>Composite personas from IDA completed-order aggregates (n = 41,063), Aug 1, 2025 – Jul 29, 2026. Not real individuals.</p>
+    <p>Age, gender, language, and device are global averages. Destination home-use and corridors: Jan–Jul 2026 with recorded destination. Billing vs licence and foreign-licence origins: Jan–Jul 2026 via <code>license_issued_country</code> (near-empty before Jan 2026). CA foreign origin: rows &lt;30 excluded (10 countries, 39 orders). GB foreign origin: only IN and US ≥30; long tail shown for context.</p>
+  </div>
+</div>
+<script src="tablesort.js"></script>
+</body>
+</html>

@@ -181,7 +181,7 @@ p{margin:0 0 8px;}
 /* bars */
 .bar-list{display:flex; flex-direction:column; gap:6px;}
 .bar{
-  display:grid; grid-template-columns:88px 1fr 52px; gap:10px;
+  display:grid; grid-template-columns:120px 1fr 52px; gap:10px;
   align-items:center; padding:4px 6px; border-radius:4px;
 }
 .bar .name{font-size:14px; color:var(--text);}
@@ -279,6 +279,6 @@ p{margin:0 0 8px;}
 @media (max-width:720px){
   .kpi-row,.cols,.device-grid,.device-grid.three,.persona-grid{grid-template-columns:1fr !important;}
   .prop{grid-template-columns:1fr; gap:2px; padding:6px 0;}
-  .bar{grid-template-columns:72px 1fr 44px;}
+  .bar{grid-template-columns:100px 1fr 44px;}
   h1{font-size:32px;}
 }

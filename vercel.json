@@ -1,10 +1,31 @@
 {
   "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     {
-      "source": "/",
-      "destination": "/IDA_Customer_Portrait_Infographic.html",
-      "permanent": false
+      "source": "/IDA_Customer_Portrait_Infographic.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/IDA_Customer_Portrait_Infographic",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/IDA_User_Personas.html",
+      "destination": "/personas",
+      "permanent": true
+    },
+    {
+      "source": "/IDA_User_Personas",
+      "destination": "/personas",
+      "permanent": true
+    },
+    {
+      "source": "/personas.html",
+      "destination": "/personas",
+      "permanent": true
     }
   ]
 }

@@ -1,6 +1,10 @@
 {
   "cleanUrls": true,
-  "rewrites": [
-    { "source": "/", "destination": "/IDA_Customer_Portrait_Infographic.html" }
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/IDA_Customer_Portrait_Infographic.html",
+      "permanent": false
+    }
   ]
 }
